@@ -1,4 +1,4 @@
-# Dashboard Goals
+9# Dashboard Goals
 
 The primary objective of this dashboard is to track end-users and analyze their behavior when accessing or interacting with our dashboards.
 
@@ -22,7 +22,7 @@ The distinct number of dashboards accessed by end-users within the selected time
 Dashboards where access permissions are set to **`EVERYONE`**.
 
 
-# Connect with Me
+## Connect with Me
 
 <a href="https://linkedin.com/in/mostafa-tabiefar" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="20" height="20" style="vertical-align: middle;">
