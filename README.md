@@ -1,4 +1,4 @@
-9# Dashboard Goals
+# Dashboard Goals
 
 The primary objective of this dashboard is to track end-users and analyze their behavior when accessing or interacting with our dashboards.
 
