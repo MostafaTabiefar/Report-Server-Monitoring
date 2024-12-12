@@ -1,27 +1,35 @@
-Changing Report Server ExecutionLogDaysKept
+# Changing the `ExecutionLogDaysKept` Setting in Report Server
 
-by default Report Server instance will only keep the most recent 60 days in the execution log, which keeps about two months of data.
-Keep in mind that:
-1. Setting the value to 0 does not keep any data.
-2. Setting the value to -1 keeps the data forever.
+By default, a **Report Server** instance retains execution logs for only the most recent **60 days**, equating to about **two months** of data. If you wish to extend or modify this retention period, consider the following options:
 
-For this dashboard, I recommend retaining data for at least one year (365 + 1 days). However, please be aware that this could potentially lead to some issues.
-If you keep all your report server logs without archiving or managing them, a few potential issues can arise:
+- **Setting the value to `0`**: This disables data retention entirely (no logs are kept).
+- **Setting the value to `-1`**: This will retain logs **indefinitely**.
 
-1. Disk Space Usage
-Problem: Logs can grow significantly over time, especially if you have a high volume of reports being processed or if the logging level is verbose.
-Impact: This can lead to reduced disk space, potentially affecting the performance of the report server and other applications on the same server.
-2. Difficulty in Maintenance
-Problem: Managing an ever-growing number of log files can make routine maintenance tasks more challenging.
-Impact: Searching for specific issues or patterns in logs might become time-consuming.
-3. Security Risks
-Problem: Retaining logs indefinitely increases the risk of sensitive data being exposed or exploited in case of a breach.
-Impact: Logs may contain information about users, reports, or configurations that attackers could leverage.
+For this dashboard, it is recommended to retain execution log data for at least **one year (366 days)**. However, be aware that retaining logs for extended periods without proper management or archiving could lead to potential issues:
 
-How to Change ExecutionLogDaysKept:
-Execute the following query after conecting to your report server instance:
+---
 
+## Potential Issues with Extended Retention
+
+### 1. **Disk Space Usage**
+- **Problem**: Logs can grow significantly over time, especially with high report volumes or verbose logging.
+- **Impact**: Excessive log growth can **consume disk space**, potentially degrading the performance of the report server and other applications sharing the same storage.
+
+### 2. **Difficulty in Maintenance**
+- **Problem**: As the number of logs increases, managing them becomes more difficult.
+- **Impact**: Finding specific issues or patterns in the logs can become **time-consuming** and challenging.
+
+### 3. **Security Risks**
+- **Problem**: Keeping logs indefinitely increases the risk of **sensitive data exposure** if a breach occurs.
+- **Impact**: Logs might contain sensitive information such as user details, reports, or configurations that could be exploited by attackers.
+
+---
+
+## How to Change the `ExecutionLogDaysKept` Setting
+
+To modify the retention period, execute the following SQL query after connecting to your Report Server instance:
+
+```sql
 UPDATE dbo.ConfigurationInfo
-    SET Value = '366' -- Or Any Desired Periods
-WHERE 1=1
-    AND Name = 'ExecutionLogDaysKept'
+SET Value = '366'  -- Or any desired retention period
+WHERE Name = 'ExecutionLogDaysKept';
