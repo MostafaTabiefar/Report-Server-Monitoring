@@ -20,3 +20,8 @@ The distinct number of dashboards accessed by end-users within the selected time
 
 ### **5. Access Issue**
 Dashboards where access permissions are set to **`EVERYONE`**.
+
+
+# Connect with Me
+
+[![LinkedIn](https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png)](https://linkedin.com/in/mostafa-tabiefar)
