@@ -1,4 +1,4 @@
-# Changing the `ExecutionLogDaysKept` Setting in Report Server
+# Changing the ExecutionLogDaysKept Setting in Report Server
 
 By default, a **Report Server** instance retains execution logs for the most recent **60 days**, which equates to about **two months** of data. If you need to adjust this retention period, consider the following options:
 
@@ -25,7 +25,7 @@ For this dashboard, it is recommended to retain execution log data for at least 
 
 ---
 
-## How to Change the `ExecutionLogDaysKept` Setting
+## How to Change the ExecutionLogDaysKept Setting
 
 To modify the log retention period, execute the following SQL query after connecting to your Report Server instance:
 
