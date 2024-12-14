@@ -1,6 +1,6 @@
 # **How to Use the Dashboard**
 
-Welcome to the **[Insert Dashboard Name]**!  
+Welcome to the **[Report Server Monitoring Dashboard]**!  
 This guide will walk you through the simple steps to configure the dashboard so it works with your data. With just a few updates, the dashboard will automatically calculate insights based on your database.
 
 ---
@@ -8,7 +8,7 @@ This guide will walk you through the simple steps to configure the dashboard so 
 ## **Step 1: Open the Power BI Dashboard**
 
 1. Open the Power BI Desktop application.
-2. Load the pre-prepared dashboard file (`.pbix`) provided to you.
+2. Load the pre-prepared dashboard file provided to you.
 
 ---
 
