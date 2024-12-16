@@ -7,23 +7,25 @@ The primary objective of this dashboard is to track end-users and analyze their 
 
 This project provides a dynamic Report Server Monitoring Dashboard that enables users to track and analyze key metrics related to a report server. 
 The dashboard is designed to give actionable insights into:
--User activity: Active users, report executions, and successful visits.
--Error monitoring: refresh(subscription) errors.
+### User activity:
+  Active users, report executions, and successful visits.
+### Error monitoring:
+  refresh(subscription) errors.
 The goal is to help system administrators, BI developers, and analysts optimize their report server performance and troubleshoot refresh issues efficiently.
 
 ---
 
 ## Features
 
-### **1.Real-Time Monitoring*
+### **1. Real-Time Monitoring*
 Visualize live server metrics with interactive charts and graphs.
-### **2.Usage Analytics*
+### **2. Usage Analytics*
 Track active users, dashboard visits, and user engagement trends.
-### **3.Error Reporting*
+### **3. Error Reporting*
 Identify and analyze report errors and system failures.
-### **4.Customizable Alerts*
+### **4. Customizable Alerts*
 Set thresholds and get notifications for critical server conditions.
-### **5.Historical Data Analysis*
+### **5. Historical Data Analysis*
 View trends and patterns over selected time periods.
 
 ---
