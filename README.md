@@ -22,10 +22,8 @@ Visualize live server metrics with interactive charts and graphs.
 ### **2. Usage Analytics**
 Track active users, dashboard visits, and user engagement trends.
 ### **3. Error Reporting**
-Identify and analyze report errors and system failures.
-### **4. Customizable Alerts**
-Set thresholds and get notifications for critical server conditions.
-### **5. Historical Data Analysis**
+Identify and analyze report subscription errors.
+### **4. Historical Data Analysis**
 View trends and patterns over selected time periods.
 
 ---
