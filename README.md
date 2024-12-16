@@ -18,6 +18,9 @@ The distinct number of users who accessed at least one dashboard during the sele
 ### **4. Active Dashboard**
 The distinct number of dashboards accessed by end-users within the selected time period.
 
+### **5. Active Users**
+distinct number of users who visited at least one dashboard within the selected time period.
+
 ### **5. Access Issue**
 Dashboards where access permissions are set to **`EVERYONE`**.
 
