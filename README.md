@@ -17,15 +17,15 @@ The goal is to help system administrators, BI developers, and analysts optimize 
 
 ## Features
 
-### **1. Real-Time Monitoring*
+### **1. Real-Time Monitoring**
 Visualize live server metrics with interactive charts and graphs.
-### **2. Usage Analytics*
+### **2. Usage Analytics**
 Track active users, dashboard visits, and user engagement trends.
-### **3. Error Reporting*
+### **3. Error Reporting**
 Identify and analyze report errors and system failures.
-### **4. Customizable Alerts*
+### **4. Customizable Alerts**
 Set thresholds and get notifications for critical server conditions.
-### **5. Historical Data Analysis*
+### **5. Historical Data Analysis**
 View trends and patterns over selected time periods.
 
 ---
