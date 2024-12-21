@@ -53,13 +53,9 @@ SELECT
     ,ISNULL(DATEDIFF(DAY, E.Last_Execution, GETDATE()), -1) AS [Date Diff] 
     ,1 AS [Data Type]                                  -- Static flag to distinguish this query block
 
-FROM dbo.PolicyUserRole AS PU                          
-    JOIN dbo.Policies AS P                             
-        ON PU.PolicyID = P.PolicyID    
+FROM dbo.PolicyUserRole AS PU                            
     JOIN dbo.Users AS U                                
         ON PU.UserID = U.UserID 
-    JOIN dbo.Roles AS R                                
-        ON PU.RoleID = R.RoleID    
     JOIN Report_Catalog AS C                           
         ON PU.PolicyID = C.PolicyID
     LEFT JOIN Max_Exe AS E                             
