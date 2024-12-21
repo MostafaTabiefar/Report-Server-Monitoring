@@ -27,8 +27,8 @@ The dashboard is pre-configured to adapt to your data with minimal setup. All yo
    - Click on **Edit Parameters**.
 
 2. **Enter Your Server and Database Information**:  
-   - **Server**: Enter your server name (e.g., `myserver.database.windows.net`).  
-   - **Database**: Enter your database name (e.g., `SalesDB`).  
+   - **Server**: Enter your server name (e.g., `dashboards`).  
+   - **Database**: Enter your database name (e.g., `PBIReportServer`).  
 
 3. Click **OK** to save the changes.
 
