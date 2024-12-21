@@ -54,13 +54,4 @@ Power BI will now connect to your database, retrieve the data, and automatically
 
 - **Connection Issues**:
   - Double-check that the **server** and **database names** you entered are correct.  
-  - Ensure you have the necessary permissions to access the database.  
-  - If your server is cloud-based, make sure your internet connection is stable.
-
-- **Need Help?**:  
-  Contact [Insert Support Contact Info] for assistance.
-
----
-
-🎉 **That’s it!** You’re ready to analyze your data and gain insights with your dashboard.  
-Enjoy the ease of exploring your data!
+  - Ensure you have the necessary permissions to access the database. 
