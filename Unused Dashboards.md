@@ -11,9 +11,9 @@ DECLARE @Last_Visit INT = 30
 (
 SELECT
 	C.Name AS [Report Name],
-    MAX(TimeStart) AS Max_Exe
-FROM [PBIReportServer].dbo.ExecutionLogStorage EL WITH(NOLOCK)
-	LEFT JOIN [PBIReportServer].dbo.Catalog C WITH(NOLOCK) 
+    	MAX(TimeStart) AS Max_Exe
+FROM dbo.ExecutionLogStorage 	AS EL WITH(NOLOCK)
+	LEFT JOIN dbo.Catalog AS C  WITH(NOLOCK) 
 		ON (EL.ReportID = C.ItemID)
 WHERE 1=1
 	AND [Status] = 'rsSuccess'
@@ -25,13 +25,13 @@ HAVING DATEDIFF(DAY, MAX(TimeStart), GETDATE()) > @Last_Visit
 ), Reports AS
 (
 SELECT 
-      [Path]																	AS [Report Path]
-      ,[Name]																	AS [Report Name]
-	  ,[ParentID]																AS [FolderID]
-      ,U1.UserName																AS [Report Created By]
-	  ,U2.UserName																AS [Report Modified By]
-      ,[CreationDate]															AS [Report Created Date]
-FROM [PBIReportServer].[dbo].[Catalog]	AS C
+	[Path]									AS [Report Path]
+	,[Name]									AS [Report Name]
+	,[ParentID]								AS [FolderID]
+	,U1.UserName								AS [Report Created By]
+	,U2.UserName								AS [Report Modified By]
+	,[CreationDate]								AS [Report Created Date]
+FROM [dbo].[Catalog]	AS C
 	JOIN [dbo].[Users]		AS U1	
 		ON C.CreatedByID = U1.UserID
 	JOIN [dbo].[Users]		AS U2
@@ -43,7 +43,7 @@ WHERE 1=1
 SELECT 
 	C.ItemID						AS FolderID
 	,C.Name							AS [Folder Name]
-FROM [PBIReportServer].[dbo].Catalog						AS C
+FROM [dbo].Catalog						AS C
 WHERE 1=1
 	AND TYPE = 1
 	AND [Path] IS NOT NULL
