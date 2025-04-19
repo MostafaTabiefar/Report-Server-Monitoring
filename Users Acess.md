@@ -2,7 +2,7 @@
 This Query Retrieves Users Acess and their last successful execution.
 
 ---
-
+ 
 ```sql
 WITH Max_Exe AS
 (
