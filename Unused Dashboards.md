@@ -16,7 +16,7 @@ FROM dbo.ExecutionLogStorage 	AS EL WITH(NOLOCK)
 	LEFT JOIN dbo.Catalog AS C  WITH(NOLOCK) 
 		ON (EL.ReportID = C.ItemID)
 WHERE 1=1
-	AND [Status] = 'rsSuccess'
+	--AND [Status] = 'rsSuccess'
 	AND RequestType = 0
 	AND ReportAction = 13
 
